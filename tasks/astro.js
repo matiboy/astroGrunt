@@ -22,9 +22,8 @@ module.exports = function(grunt) {
 
     // Iterate over all specified file groups.
     this.files.forEach(function(file) {
-      grunt.log.writeln(file);
-      console.log(file);
       var json = grunt.file.readJSON(file.src);
+      console.log(json);
       grunt.log.writeln(json);
       return;
     });

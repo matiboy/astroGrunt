@@ -14,6 +14,7 @@ module.exports = function(grunt) {
   // creation: http://gruntjs.com/creating-tasks
 
   grunt.registerMultiTask('astro', 'Grunt plugin to parse astro json files', function() {
+    grunt.log.writeln('Cont');
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       punctuation: '.',

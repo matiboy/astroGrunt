@@ -14,7 +14,6 @@ module.exports = function(grunt) {
   // creation: http://gruntjs.com/creating-tasks
 
   grunt.registerMultiTask('astro', 'Grunt plugin to parse astro json files', function() {
-    grunt.log.writeln('Cont');
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       punctuation: '.',
@@ -24,8 +23,9 @@ module.exports = function(grunt) {
     // Iterate over all specified file groups.
     this.files.forEach(function(file) {
       grunt.log.writeln(file);
+      console.log(file);
       var json = grunt.file.readJSON(file.src);
-      grunt.log(writeln('File') + file.src);
+      grunt.log.writeln(json);
       return;
     });
   });

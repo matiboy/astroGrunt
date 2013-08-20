@@ -34,7 +34,8 @@
     "grunt": "~0.4.1"
   },
   "peerDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "htmlparser": "~1.7.6"
   },
   "keywords": [
     "gruntplugin"

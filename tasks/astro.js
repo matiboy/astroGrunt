@@ -9,7 +9,7 @@
 'use strict';
 
 module.exports = function(grunt) {
-  grunt.log.writeln('Start...');
+  grunt.log.writeln('Start');
   // Please see the Grunt documentation for more information regarding task
   // creation: http://gruntjs.com/creating-tasks
 

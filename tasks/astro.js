@@ -25,6 +25,7 @@ module.exports = function(grunt) {
     // Iterate over all specified file groups.
     this.files.forEach(function(file) {
       var json = grunt.file.readJSON(file.src);
+      console.log(file.src);
       var htmlfile = file.src.replace('.json', '.html');
       var rawHtml = grunt.file.read(htmlfile);
       var handler = new htmlparser.DefaultHandler(function (error, dom) {
